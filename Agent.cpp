@@ -38,7 +38,9 @@ string Agent:: toString(vector<vector<float>> deq) {
         os << "(";
         for (int j=0; j<deq[i].size(); j++) {
             
-        os << deq[i][j] << ", ";
+        os << deq[i][j];
+        if (j != deq[i].size()-1)
+            os << " ,";
     }
         os << ")";
     }
