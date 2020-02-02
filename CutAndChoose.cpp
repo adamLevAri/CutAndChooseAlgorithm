@@ -14,7 +14,6 @@ public:
   
     Allocation asymmetric_protocol(vector<Agent*> agents) {
         
-        //int numOfAgents = agents.size();
         if (agents.size() != 2)
             throw "Cut and choose works only for two agents";
         
