@@ -81,7 +81,6 @@ public:
     virtual float mark(float start, float targetValue) {
         
         //TODO: the cake to the left of 0 and to the right of length is considered worthless.
-        //start = max((float) 0, min(start, this->length));
         start = max((float)0, start);
         
         if (start >= this->length)
