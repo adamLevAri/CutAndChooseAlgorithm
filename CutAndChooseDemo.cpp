@@ -30,15 +30,18 @@ int main(int argc, const char * argv[]){
     cout << George.print() << endl;
     
     //all details of George check
+    cout << "George Details: Cake Value | Cake Length | Eval(1,3) | Mark(1,77)" << endl;
     cout << George.cakeValue() << " | " << George.cakeLength() << " | "
     << George.eval(1, 3) << " | " << George.mark(1, 77) << endl;
     
     //.mark() check
+    cout << "George mark as follow: (1,55), (1.5,44), (1,66), (1.5,55), (1,99), (1,0)" << endl;
     cout << George.mark(1, 55) << " | " << George.mark(1.5, 44) << " | "
     << George.mark(1, 66) << " | " << George.mark(1.5, 55) << " | "
     << George.mark(1, 99) << " | " << George.mark(1, 0) << endl;
     
     //.eval() check
+    cout << "George Eval as follow: (1,3), (1.5,3), (1,3.25), (1.5,3.25), (3,3), (3,7), (-1,7)" << endl;
     cout << George.eval(1, 3) << " | " << George.eval(1.5, 3) << " | "
     << George.eval(1, 3.25) << " | " << George.eval(1.5, 3.25) << " | "
     << George.eval(3, 3) << " | " << George.eval(3, 7)  << " | "
@@ -46,7 +49,7 @@ int main(int argc, const char * argv[]){
     
     //*****************************
     
-    cout << "ALICE SPECS:" <<endl;
+    cout << "Alice Details: Cake Value | Cake Length | Eval(3,1) | Mark(1.5,0.01)" << endl;
     //all details of Alice check
     cout << Alice.cakeValue() << " | " << Alice.cakeLength() << " | "
     << Alice.eval(3, 1) << " | " << Alice.mark(1.5, 0.01) << endl;
@@ -62,7 +65,6 @@ int main(int argc, const char * argv[]){
     
     //Cut & Choose Method:
     CutAndChoose cas;
-    /*
     cout << "### Asymmetric protocol: ###" << endl;
     cout << "### Alice cuts and George chooses:" << endl;
     cout << cas.asymmetric_protocol({&Alice2, &George2}).print() << endl;
@@ -70,7 +72,6 @@ int main(int argc, const char * argv[]){
     cout <<"### George cuts and Alice chooses:" << endl;
     cout << cas.asymmetric_protocol({&George2, &Alice2}).print() << endl;
 
-     */
     cout << "### Symmetric protocol: ###" << endl;
     cout << "### Alice cuts and George chooses:" << endl;
     cout << cas.symmetric_protocol({&Alice2, &George2}).print();
